@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TestAPIWhastasAppv2.Interfases;
 using TestWhatsApp.Models;
 
 namespace TestAPIWhastasAppv2.Controllers;
@@ -7,10 +8,29 @@ namespace TestAPIWhastasAppv2.Controllers;
 [Route("WhatsApp")]
 public class WhatsAppController : Controller
 {
-    [HttpGet("Sample")]
-    public ActionResult Sample()
+    private readonly IEnviarMensaje _enviarMensaje;
+    public WhatsAppController(IEnviarMensaje enviarMensaje)
     {
-        return Ok("Todo bien");
+        _enviarMensaje = enviarMensaje;   
+    }
+    [HttpGet("Sample")]
+    public async Task<ActionResult> Sample()
+    {
+        var data = new
+        {
+            messaging_product = "whatsapp",
+            recipient_type = "individual",
+            to = "584241325210",
+            type = "text",
+            text = new
+            {
+                preview_url = false,
+                body = "Esto es un test"
+            }
+        };
+
+        var resul = await _enviarMensaje.Execute(data);
+        return Ok();
     }
 
     [HttpGet("Tokken")]
@@ -43,7 +63,7 @@ public class WhatsAppController : Controller
             }
             return Ok("EVENT_RECEIVE");
         }
-        catch (Exception ex)
+        catch
         {
             return Ok("EVENT_RECEIVE");
         }

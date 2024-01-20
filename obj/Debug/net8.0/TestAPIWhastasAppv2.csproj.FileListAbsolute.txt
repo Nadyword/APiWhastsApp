@@ -31,3 +31,4 @@ C:\Users\samue\OneDrive\Documentos\Proyec\TestAPIWhastasAppv2\APiWhastsApp\obj\D
 C:\Users\samue\OneDrive\Documentos\Proyec\TestAPIWhastasAppv2\APiWhastsApp\obj\Debug\net8.0\TestAPIWhastasAppv2.pdb
 C:\Users\samue\OneDrive\Documentos\Proyec\TestAPIWhastasAppv2\APiWhastsApp\obj\Debug\net8.0\TestAPIWhastasAppv2.genruntimeconfig.cache
 C:\Users\samue\OneDrive\Documentos\Proyec\TestAPIWhastasAppv2\APiWhastsApp\obj\Debug\net8.0\ref\TestAPIWhastasAppv2.dll
+C:\Users\samue\OneDrive\Documentos\Proyec\TestAPIWhastasAppv2\APiWhastsApp\bin\Debug\net8.0\Newtonsoft.Json.dll

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestAPIWhastasAppv2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4dd2ac027a7cffaecd843401567326559c2c8b53")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17fddef9aa7d2620443f3fa315e15088f310e482")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestAPIWhastasAppv2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestAPIWhastasAppv2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
