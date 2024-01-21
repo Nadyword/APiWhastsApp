@@ -1,4 +1,5 @@
 using TestAPIWhastasAppv2.Interfases;
+using TestAPIWhastasAppv2.Model;
 using TestAPIWhastasAppv2.Service.WhatsAppCloud;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IEnviarMensaje, EnviarMensaje>();
+builder.Services.AddSingleton<IMMensajes, MMensajes>();
 
 var app = builder.Build();
 
